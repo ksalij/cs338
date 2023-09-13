@@ -1,0 +1,5 @@
+Kiri Salij
+
+I have installed (I believe successfully) the Kali Linux distribution in a virtual machine on my Windows laptop.
+I just followed the instructions and didn't seem to have any issues. My plan is to mostly use my laptop and 
+maybe occassionally lab computers if the situation calls for it. 
