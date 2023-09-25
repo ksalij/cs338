@@ -1,0 +1,110 @@
+Kiri Salij
+25 September 2023
+Being Eve Assignment
+
+--------- Diffie-Hellman -------------
+1. Figure out the shared secret agreed upon by Alice and Bob. This will be an integer.
+    6
+2. Show your work. Exactly how did you figure out the shared secret?
+    The code below is written in python, and I wrote it using the equations provided in the Diffie-Helman and RSA lab. 
+
+    ###### Diffie-Hellman code #######
+    # variables that we were given (aka that Eve could see publically)
+    g = 7
+    p = 61
+    A = 30
+    B = 17
+
+    # Brute-force to figure out what random number Alice chose
+    # if the integers were much larger, the for loop would take much too long to brute-force,
+    # especially because the g**i would also get larger, potentially running out of memory
+    # or computational power to find the modulo. This is also true for the for loop below.
+    # (techically, you need to only calculate X or Y, but I wanted to double check my answer)
+    for i in range(p):
+        if ((g**i) % p == A):
+            X = i # equals 41
+    
+    # Brute-force to figure out what random number Bob chose
+    for i in range(p):
+        if ((g**i) % p == B):
+            Y = i # equals 23
+
+# Secret Key calculations, I did both to make sure I did it right
+print((B**X) % p) # equals 6
+print((A**Y) % p) # equals 6
+
+3. Show precisely where in your process you would have failed if the integers involved were much larger.
+    Work shown above.
+
+------------- RSA ----------------
+1. Figure out the encrypted message sent from Alice to Bob.
+    Hi Bob. I'm walking from now on. Your pal, Alice. https://foundation.mozilla.org/en/privacynotincluded/articles/its-official-cars-are-the-worst-product-category-we-have-ever-reviewed-for-privacy/ 
+
+2. Show your work. Exactly how did you figure out the message? (You should include an explanation of how the message from Alice to Bob is encoded. That is, how does Alice's intended message (whatever manner of message it may be) correspond to the integers in the plaintext that you end up with after decrypting the encrypted message?)
+    The code below is written in python, and I wrote it using the equations provided in the Diffie-Hellman and RSA lab. I did not copy over where I initialized the variable encrypted as the list of encrypted numbers that Jeff provided in the assignment. I also omitted where I import math. 
+
+    ######## RSA code ##########
+    (e_Bob, n_Bob) = (17, 170171)
+
+    factors = []
+    # code modified from https://www.programiz.com/python-programming/examples/factor-number
+    # Brute-force finds the factors of n_Bob, one of the values in Bob's public key
+    # if n_Bob were a very very large number, it would take much too long to brute-force check
+    # for its factors
+    for i in range(1, n_Bob + 1):
+        if n_Bob % i == 0:
+            factors.append(i)
+
+    # removes 1 and the number itself, both are unhelpful to figuring out p and q
+    factors.remove(1) 
+    factors.remove(n_Bob)
+
+    # in my print testing, I saw that I was left with just two factors, which must be p_Bob and q_Bob
+    (p_Bob, q_Bob) = (factors[0], factors[1])
+
+    # using the equation from the lab, we find the larget common multiple of p_Bob-1 and q_Bob-1
+    # I call it l_n_Bob for lambda(n_Bob) which is the terminology used in the math. 
+    l_n_Bob = math.lcm(p_Bob-1,q_Bob-1)
+
+    # brute-force checks all d's until it finds a d_Bob that works, 
+    # thus discovering Bob's secret key, which we can use to decrypt the message. 
+    # similarly to the other brute-force loop, this could take a while to find d_Bob 
+    # if the numbers were very large
+    for d in range(l_n_Bob):
+        if ((e_Bob * d) % l_n_Bob == 1):
+            d_Bob = d
+        
+    # decrypts and decodes Alice's message
+    # first we convert the decimal number to a binary, which we then convert to a string, 
+    # so that we can split it up into two separate numbers which correspond to unicode 
+    # characters. 
+    for num in encrypted:
+        bin_num = bin((num**d_Bob) % n_Bob)
+        str_num = str(bin_num)
+
+        str_num = str_num[2:] # removes the 0b designating it as a binary number
+        str_num_len = len(str_num)
+
+        second_num = str_num[str_num_len-8:] # second 8 digits
+        first_num = str_num[:str_num_len-8] 
+        # first 8 digits (well... not exactly), there could be leading 0s 
+        # that were lost when the encryption occurred, which is why we count 
+        # from the back when we split the binary number into 2. 
+        # So if the total string has less than 16 digits, the first "half" will be the shorter 
+        # of the two, accounting for the lost leading 0s. 
+
+        # The original message was unicode or ASCII characters, each of which correspond to 
+        # an 8 bit binary number. Alice concatenated the two bytes to one chunk which was 
+        # then converted to decimal and encrypted. We just undid that within this loop. 
+
+        # chr() takes the decrypted integers and decodes them to the unicode characters, 
+        # which for our purposes is also the ASCII characters. 
+        print(chr(int(first_num, 2)) + chr(int(second_num,2)), end = '')
+
+    print()
+
+3. Show precisely where in your process you would have failed if the integers involved were much larger.
+    Work shown above.
+
+4. Explain, briefly, why the message encoding Alice used would be insecure even if Bob's keys involved larger integers.
+    Probably because encrypting characters one at a time or two at a time, makes the encoding vulnerable to people looking at it and finding patterns. There are letter pairs that occur more often than others, so eventually the cipher could be broken. 
