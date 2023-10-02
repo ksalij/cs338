@@ -1,0 +1,254 @@
+Kiri Salij
+2 October 2023
+I talked with both Kyra Helmold and Lysander Miller about various
+issues we ran into, but we all wrote up our own documents.
+I recommend turning on word wrap to view this .txt file. 
+
+
+I ran the following command:
+    ssh-keygen -t rsa -m pem
+
+The contents of id_rsa_homework:
+-----BEGIN RSA PRIVATE KEY-----
+    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
+    -----END RSA PRIVATE KEY-----
+
+The contents of id_rsa_homework.pub:
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCd96aofU9b7E0SiuV4LoSFnkpnhvD48+J0N9WpCt8WxMtDJBIVguVv4ixL9l4y4MVEGdRut8eaF4xrzbiiItSDUUxisEFCD6i6ZdtfgHNtcHsBMaD3RYllvb1vTy6uSGRRQ6p1FHzEzIy9zNiQkXYd5dDpOOMzCBesBAZMqWv/6zkVgeMCPAId7Mgpu2gWiiqmR2wx4hZrtJWnFY6ngyxvfH1+buwYZeJAFD1xBC4dujGZ2jvwDFjOiQgHNH8s+B8RnDpDVG2JJumKVEv2s4DRO0gZAvnTrNMWIhOskpW/ynMxSX15b/0VQkzv0ExSkq3HAZhnZZxFNP7K2Q+gFhGP9pHVFkSvx6A5Ew7t5RxR0WLdsgw2iqiE5kp8ExiJJHpiTmPbZwBHImMY5RQ0QgNr446x/fyv/CwlSRsTBRLQ5LlTNHk0WsKkLwwdi9akrtKVIi58KokSZ+m78a2DKxx5+/1Fo+2aI9kuZIjjsuIet6DQpniaUbD+hhEVyYhF42U= ksalij@DESKTOP-2E38JLT
+
+=========================== Private Key ==============================
+The private key should have the syntax described in Section A.1.2 in RFC  
+8017 written in ASN.1.
+
+RSAPrivateKey ::= SEQUENCE {
+    version           Version,
+    modulus           INTEGER,  -- n
+    publicExponent    INTEGER,  -- e
+    privateExponent   INTEGER,  -- d
+    prime1            INTEGER,  -- p
+    prime2            INTEGER,  -- q
+    exponent1         INTEGER,  -- d mod (p-1)
+    exponent2         INTEGER,  -- d mod (q-1)
+    coefficient       INTEGER,  -- (inverse of q) mod p
+    otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+
+There should be a INTEGER which is the version number (in this case 0 
+because we using two primes, not multiple), the various INTEGERs (n,e,d,p,
+q) involved in the math of RSA encryption, some more INTEGERs to make the 
+math a little easier, and no otherPrimesInfos because we do not have more 
+than two primes.
+
+I used Michael Holtstrom's ASN.1 decoder to decode the private key. I had to
+delete the header and footers from the file before it correctly decoded the 
+base64. I also used Lapo Luchini's ASN.1 decoder for the offset values. 
+
+INTEGER 0x00
+    This INTEGER corresponds with the version number. As mentioned above,
+    it is 0 because we are using version 0 (two-prime) of RSA. This value 
+    begins at offset 4. At that offset we find 02 01 00, 
+    02 -> 00|0|00010, tag class universal | primative | INTEGER type
+    01 -> 0|0000001, definite short (length of value is 0-127) | 1 octet
+    00 -> 00000000, value = 0
+
+INTEGER 0x009df7a6a87d4f5bec4d128ae5782e84859e4a6786f0f8f3e27437d5a90adf16c4cb4324121582e56fe22c4bf65e32e0c54419d46eb7c79a178c6bcdb8a222d483514c62b041420fa8ba65db5f80736d707b0131a0f7458965bdbd6f4f2eae48645143aa75147cc4cc8cbdccd89091761de5d0e938e3330817ac04064ca96bffeb391581e3023c021decc829bb68168a2aa6476c31e2166bb495a7158ea7832c6f7c7d7e6eec1865e240143d71042e1dba3199da3bf00c58ce890807347f2cf81f119c3a43546d8926e98a544bf6b380d13b481902f9d3acd3162213ac9295bfca7331497d796ffd15424cefd04c5292adc7019867659c4534fecad90fa016118ff691d51644afc7a039130eede51c51d162ddb20c368aa884e64a7c131889247a624e63db670047226318e5143442036be38eb1fdfcaffc2c25491b130512d0e4b9533479345ac2a42f0c1d8bd6a4aed295222e7c2a891267e9bbf1ad832b1c79fbfd45a3ed9a23d92e6488e3b2e21eb7a0d0a6789a51b0fe861115c98845e365
+    This integer is the modulus, aka n. Offset is 7. At that offset we find:
+    02 -> integer type
+    82 -> 1|0000010, definite long (following number is # length octets) | 2
+        01 81 -> length of value = 0x181 = 385 octets
+    The above very large number is the value of n in hex. 
+
+INTEGER 0x010001
+    This integer is the public exponent, aka e. Offset is 396. At that offset we find:
+    02 -> integer type
+    03 -> 0|0000011, definite short | 3 octets containing value
+    01 00 01 -> value = 0x010001 = 65537 = e
+
+INTEGER 0x0d9e2ea01a5367d3866e698a7032a46a8773971aaf35eb0273ede74db019fcd2c0ca1c3731e30ba7fa49c2cfad9db9ba4fcd613e9d39c81b2d18130f4e6cedc09756dc3021241289036ea9fb80ed927aeea3b2f55333cbad396ef6044fbc2711fcde7638ab283967ffdf11e47e8c07b07aa228a4e6933ce89b83ea4e1c11eb294a4dc4197f951042a7a9b6cd48e31e8ca0328a8d7f55daf9a1a81a87e6817ca86cc53dcbceaf28c3592e5580a3715d4f329cf68f11b9e2c30555ab97573a5776656b0b18d52bb9860229f8aa7cd98f1c14958c95213322d2dccfbbd4ed348601e738c5a698702123bfc94190d6a8e29a208e1645458e2bd91448f0e82c823d62f0e07a4245d56b85729f3b46b097355865417e67237770e49fd06d41b2a9035e2e9c6f46f9d07b3f248ef1c5ef6d5f1dba03831c71d921e00e16b4abe5fab418dfddbe820a898cea5527def42ae20a87b9ab9988cdd79616a8f741e5f16f64e4f10bd1eba70544aadb842e0c3ebac8635d237d1dac9ef3c149b5ef8356c5e461
+    This integer is the private exponent, aka d. Offset is 401. At that 
+    offset we find: 
+    02 -> integer type
+    82 -> 1|0000010, definite long (following number is # length octets) | 2
+        01 80 -> length of value = 0x180 = 384 octets
+    The above very large number is the value of d in hex.
+
+INTEGER 0x00b9656ecd26d670e868a4cd9c73edd82151c046123f6b70a9256fa9ba955787de32cb03698001a0ca9b75381728569b9a1d29184a4a4e4bd6a3d315be8ea903331ad78ed2e5576337ba3d40e961d2e90bcba3ca6b637941c179d1c225b8bdf642a1e5358ae8580071bed6e34e18182488bb0b8c7ae49c1457352f3555570f95eb9b61c57146b07272b8ec715ac3a8b751d8d59c82e697a9e35b4ce429817e7f8d05a414d6e0bf6ab7d1711ef95025a03c06e5d77573944e14fa8f12bc8396f245
+    This integer is prime1, aka p. Offset is 789. At that offset we find:
+    02 -> integer type
+    81 -> definite long, 1 octet containing length
+        C1 -> length of value = 0xC1 = 193 octets
+    The above large number is the value of p in hex. 
+
+INTEGER 0x00da202362235eac3ba9bc15bc923b8cf336cae39e482fd7ef2ffb534553c1b9e43e600c955ba53ac14dcb23984782848fe996f137dc1bce9b08772ea4c624fb300b5d83e31a7c406fc8bde84d4feb4f9e7e52322ec4f8f07f2cc2cec9a369711c9978b1a4ab21fb0f201d101624e512fae54ddd97cda93b4c81818c2d74fbb19e4d755a6c81ced062aaaffc4d158ebc479984d97512f17d9f35637e3dff021cd637efc63d8727849ea1619619111e05b29eab993b30f3aceb0ab2f8f1fa14cea1
+    This integer is prime2, aka q. Offset is 985. At that offset we find:
+    02 -> integer type
+    81 -> definite long, 1 octet containing length
+        C1 -> length of value = 0xC1 = 193 octets
+    The above large number is the value of q in hex.
+
+INTEGER 0x269bc907501f38442e06a40b00d97738f91d617a4b5ac48b75105bf84f417b39fab9ec6bfc0c5abfd6c0027e5018392f4f034fdba8bdc56d5d9087e6b72edb4bb93b4ab300afc229c8cf18c58169babe8a1a01fd7b29b557e5569967e1a12db7929f7917046bcf2be0e23f53f410930b2668b148a6731a894eba16113fa02f4871835aeacc1dd2b7b16b0bf02aeee7be53b9a86e5a371b5a0d9965aa7f1d28d2e569d62d2980b368b4652a5e2122b4cbcb63f20ab3971eeb9f824c149612c941
+    This integer is exponent1, aka d mod (p-1). Offset is 1181. At that 
+    offset with find:
+    02 -> integer type
+    81 -> definite long, 1 octet containing length 
+        C0 -> length of value = 0xC0 = 192 octets
+    The above large number is the value of d mod (p-1) in hex.
+
+INTEGER 0x00b13cd4037642032927ae50eb3cd76e9c61b55266d6b929788d4066553acd7b42defc24bd680e4643b3f69021b85971658ea4bbb46c019c4b950162c138cfebdb0a211e7d7693e7b7ed218294ef8f80ce844e3dc08b04cc464a14b0fa5ef1da9b26894faf41ef06952fbeedc7508b6274c3c6157cb7fbfed717943056ef6b64d400948eb904710c1a601f479f4b19041c19be3d04483439a3183a93e5c443ef3291991f37f78e40d0b4c91ab19b9b0d7e2a37bcf6bfbc0091abcbe94495b43a81
+    This integer is exponent2, aka d mod (q-1). Offset is 1376. At that 
+    offset with find:
+    02 -> integer type
+    81 -> definite long, 1 octet containing length 
+        C1 -> length of value = 0xC0 = 193 octets
+    The above large number is the value of d mod (q-1) in hex.
+
+INTEGER 0x0dcf3fff8568e7172a6df68d53b61f3edb7c1abf4c971db49fcba5e3b7e3974154dd5effba276901b5816f588f5c854168d43ee83ac9c52371f3aceaec1c278993c7093a0d9c0dcd5c1242f93dd39a4bf6037adfb362b2a3e1ac1b0016e07ca54e887af170d5043e9179eb274e9d58a0a839721a9a612070e3980cc1248f2d8862005eb360ced8f96ebeb0f0b3d49f132e09d2ce3a25cb6456ca030007bc404fa4857c623bd96e9540114b7cbf6ba59735bceaf849d748ba65cb74d4369528f7
+    This integer is coefficient, aka (inverse of q) mod p. Offset is 1572. At that offset with find:
+    02 -> integer type
+    81 -> definite long, 1 octet containing length 
+        C0 -> length of value = 0xC0 = 192 octets
+    The above large number is the value of (inverse of q) mod p in hex.
+
+=========================== Public Key ==============================
+The public key should have the syntax described in Section A.1.1 in RFC  
+8017 written in ASN.1. This makes sense because these are the integers 
+needed to encrypt a message to the holder of the private key. 
+
+RSAPublicKey ::= SEQUENCE {
+    modulus           INTEGER,  -- n
+    publicExponent    INTEGER   -- e
+}
+
+I decoded the key with the following command:
+cat id_rsa_homework.pub | cut -d " " -f2 | \
+  base64 -d | hexdump -ve '/1 "%02x "' -e '2/8 "\n"'
+
+which was found on the resource linked in the assignment https://www.thedigitalcatonline.com/blog/2018/04/25/rsa-keys/. 
+
+
+The following is the output of the above command:
+
+00 00 00 07 73 73 68 2d 72 73 61 00 00 00 03 01
+00 01 00 00 01 81 00 9d f7 a6 a8 7d 4f 5b ec 4d
+12 8a e5 78 2e 84 85 9e 4a 67 86 f0 f8 f3 e2 74
+37 d5 a9 0a df 16 c4 cb 43 24 12 15 82 e5 6f e2
+2c 4b f6 5e 32 e0 c5 44 19 d4 6e b7 c7 9a 17 8c
+6b cd b8 a2 22 d4 83 51 4c 62 b0 41 42 0f a8 ba
+65 db 5f 80 73 6d 70 7b 01 31 a0 f7 45 89 65 bd
+bd 6f 4f 2e ae 48 64 51 43 aa 75 14 7c c4 cc 8c
+bd cc d8 90 91 76 1d e5 d0 e9 38 e3 33 08 17 ac
+04 06 4c a9 6b ff eb 39 15 81 e3 02 3c 02 1d ec
+c8 29 bb 68 16 8a 2a a6 47 6c 31 e2 16 6b b4 95
+a7 15 8e a7 83 2c 6f 7c 7d 7e 6e ec 18 65 e2 40
+14 3d 71 04 2e 1d ba 31 99 da 3b f0 0c 58 ce 89
+08 07 34 7f 2c f8 1f 11 9c 3a 43 54 6d 89 26 e9
+8a 54 4b f6 b3 80 d1 3b 48 19 02 f9 d3 ac d3 16
+22 13 ac 92 95 bf ca 73 31 49 7d 79 6f fd 15 42
+4c ef d0 4c 52 92 ad c7 01 98 67 65 9c 45 34 fe
+ca d9 0f a0 16 11 8f f6 91 d5 16 44 af c7 a0 39
+13 0e ed e5 1c 51 d1 62 dd b2 0c 36 8a a8 84 e6
+4a 7c 13 18 89 24 7a 62 4e 63 db 67 00 47 22 63
+18 e5 14 34 42 03 6b e3 8e b1 fd fc af fc 2c 25
+49 1b 13 05 12 d0 e4 b9 53 34 79 34 5a c2 a4 2f
+0c 1d 8b d6 a4 ae d2 95 22 2e 7c 2a 89 12 67 e9
+bb f1 ad 83 2b 1c 79 fb fd 45 a3 ed 9a 23 d9 2e
+64 88 e3 b2 e2 1e b7 a0 d0 a6 78 9a 51 b0 fe 86
+11 15 c9 88 45 e3 65
+
+Using the same website, it help specifies the contents of this decoded file.
+
+(4 bytes)   00 00 00 07          = 7 (next thing length 7)
+(7 bytes)   73 73 68 2d 72 73 61 = "ssh-rsa" (US-ASCII)
+(4 bytes)   00 00 00 03          = 3 (next thing length 3)
+(3 bytes)   01 00 01             = 65537 (publicExponent e)
+(4 bytes)   00 00 01 81          = 385 (next thing length 385)
+(385 bytes) 00 9d .. 45 e3 65    = The key modulus
+
+=========================== Sanity Check ==============================
+First of all, p*q should equal n. Using interactive mode in python,
+I was able to check that p*q = n, without breaking things by trying to 
+print the numbers. 
+
+    # converts p from hex to decimal
+    >>> p = int('0x00b9656ecd26d670e868a4cd9c73edd82151c046123f6b70a9256fa9ba955787de32cb03698001a0ca9b75381728569b9a1d29184a4a4e4bd6a3d315be8ea903331ad78ed2e5576337ba3d40e961d2e90bcba3ca6b637941c179d1c225b8bdf642a1e5358ae8580071bed6e34e18182488bb0b8c7ae49c1457352f3555570f95eb9b61c57146b07272b8ec715ac3a8b751d8d59c82e697a9e35b4ce429817e7f8d05a414d6e0bf6ab7d1711ef95025a03c06e5d77573944e14fa8f12bc8396f245',1
+    6)
+
+    # converts q from hex to decimal
+    >>> q = int('0x00da202362235eac3ba9bc15bc923b8cf336cae39e482fd7ef2ffb534553c1b9e43e600c955ba53ac14dcb23984782848fe996f137dc1bce9b08772ea4c624fb300b5d83e31a7c406fc8bde84d4feb4f9e7e52322ec4f8f07f2cc2cec9a369711c9978b1a4ab21fb0f201d101624e512fae54ddd97cda93b4c81818c2d74fbb19e4d755a6c81ced062aaaffc4d158ebc479984d97512f17d9f35637e3dff021cd637efc63d8727849ea1619619111e05b29eab993b30f3aceb0ab2f8f1fa14cea1', 
+    16)
+
+    # prints out the result of comparing n converted to decimal to p*q
+    >>> print(p*q == int('0x009df7a6a87d4f5bec4d128ae5782e84859e4a6786f0f8f3e27437d5a90adf16c4cb4324121582e56fe22c4bf65e32e0c54419d46eb7c79a178c6bcdb8a222d483514c62b041420fa8ba65db5f80736d707b0131a0f7458965bdbd6f4f2eae48645143aa75147cc4cc8cbdccd89091761de5d0e938e3330817ac04064ca96bffeb391581e3023c021decc829bb95a7158ea7832c6f7c26e98a544bf6b380d13b481902f9d3acd3162213ac9295bfca7331497d796ffd15424cefd04c5292adc7019867659c4534fecad90fa016118ff691d51644afc7a039130eede51c51d162ddb20c368aa884e64a7c131889247a624e63db670047226318e5143442036be38eb1fdfcaffc2c25491b130512d0e4b9533479345ac2a42f0c1d8bd6a4aed295222e7c2a891267e9bbf1ad832b1c79fbfd45a3ed9a23d92e6488e3b2e21eb7a0d0a6789a51b0fe861115c98845e365',16))
+    True
+    ^^^ Prints out true. 
+
+Additionally e*d mod lambda(n) = 1 should be true as well. Let's check. 
+
+    # set e to e in base 10 
+    >>> e = 65537
+
+    # converts d from hex to decimal
+    >>> d = int('0x0d9e2ea01a5367d3866e698a7032a46a8773971aaf35eb0273ede74db019fcd2c0ca1c3731e30ba7fa49c2cfad9db9ba4fcd613e9d39c81b2d18130f4e6cedc09756dc3021241289036ea9fb80ed927aeea3b2f55333cbad396ef6044fbc2711fcde7638ab283967ffdf11e47e8c07b07aa228a4e6933ce89b83ea4e1c11eb294a4dc4197f951042a7a9b6cd48e31e8ca0328a8d7f55daf9a1a81a87e6817ca86cc53dcbceaf28c3592e5580a3715d4f329cf68f11b9e2c30555ab97573a5776656b0b18d52bb9860229f8aa7cd98f1c14958c95213322d2dccfbbd4ed348601e738c5a698702123bfc94190d6a8e29a208e1645458e2bd91448f0e82c823d62f0e07a4245d56b85729f3b46b097355865417e67237770e49fd06d41b2a9035e2e9c6f46f9d07b3f248ef1c5ef6d5f1dba03831c71d921e00e16b4abe5fab418dfddbe820a898cea5527def42ae20a87b9ab9988cdd79616a8f741e5f16f64e4f10bd1eba70544aadb842e0c3ebac8635d237d1dac9ef3c149b5ef8356c5e461', 16)
+
+    # calculates lamda(n)
+    >>> import math
+    >>> lam_n = math.lcm(p-1,q-1)
+
+    # checks if true. it is true. 
+    >>> print((e*d % lam_n) == 1)
+    True
+
+We check exponent1 is in fact d mod (p-1). It is.
+    >>> exponent1 = int('0x269bc907501f38442e06a40b00d97738f91d617a4b5ac48b75105bf84f417b39fab9ec6bfc0c5abfd6c0027e5018392f4f034fdba8bdc56d5d9087e6b72edb4bb93b4ab300afc229c8cf18c58169babe8a1a01fd7b29b557e5569967e1a12db7929f7917046bcf2be0e23f53f410930b2668b148a6731a894eba16113fa02f4871835aeacc1dd2b7b16b0bf02aeee7be53b9a86e5a371b5a0d9965aa7f1d28d2e569d62d2980b368b4652a5e2122b4cbcb63f20ab3971eeb9f824c149612c941',16)
+    >>> print((d % (p-1) == exponent1))
+    True
+
+We also check exponent2. It does equal d % (q-1). 
+    >>> exponent2 = int('0x00b13cd4037642032927ae50eb3cd76e9c61b55266d6b929788d4066553acd7b42defc24bd680e4643b3f69021b85971658ea4bbb46c019c4b950162c138cfebdb0a211e7d7693e7b7ed218294ef8f80ce844e3dc08b04cc464a14b0fa5ef1da9b26894faf41ef06952fbeedc7508b6274c3c6157cb7fbfed717943056ef6b64d400948eb904710c1a601f479f4b19041c19be3d04483439a3183a93e5c443ef3291991f37f78e40d0b4c91ab19b9b0d7e2a37bcf6bfbc0091abcbe94495b43a81',16)
+    >>> print(d % (q-1) == exponent2)
+    True
+
+These relationships are also hold true.
+    >>> math.gcd(e,lam_n)
+    1
+    >>> e < lam_n
+    True
+
+I think I have proven the sanity of this RSA encryption key. 
+
