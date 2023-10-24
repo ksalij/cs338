@@ -1,0 +1,85 @@
+Kiri Salij
+22 October 2023
+I brainstormed ideas with Lysander Miller.
+
+
+A. Identify the main ethical question or questions faced by the main character ("you") in the scenario. This will certainly include "what should you do?", but there may be other interesting questions to consider.
+    1. Do I do nothing and let the company sell the data (potentially)? Clearly I would be complicit in the selling of the data, but can I be held responsible even though it wasn't my idea? 
+    2. Do I have an ethical responsibility to protect the consumers privacy, even though it wasn't my decision or my original proposal?
+    3. If all the data is anonymized, what is the harm being done? I think the issue lies mostly in being able to track that information back to you, but there could be unforeseen harm in the anonymous data too. 
+    4. Is losing my job worth trying to protect the consumer's privacy? I think for oneself, it is important to consider risk versus reward. 
+
+
+B. For each stakeholder (or category of stakeholders) in the scenario, identify the stakeholder's relevant rights.
+    1: The CEO: It's their company, so unless the company does something against the law, they have the right to make decisions on behalf of the company. And although the laws vary depending on the state or country, there are at least many parts of the US where it is legal to sell anonymized data if the consumer is informed.
+
+    2: The consumers: Legally, they have the right to be informed about what data is being collected and how it is used. However, on an ethical level, I believe consumers should have the right to opt out of the data collection. Additionally, on an ethical level, I don't think Beerz should emulate the issue we read about with cars. If I remember correctly, not many of the car brands let you opt out of data collection, and if they did, then you weren't able to use some of the extra features that YOU PAID for. Thus, opting out of data collection shouldn't make certain features unuseable. 
+
+    3: Myself: When I took the job, I was told that the consumer's privacy was a priority. Selling user data wasn't what I signed up for. That means 1) I have the right to leave the company but also 2) Perhaps I have the right to be a part of the version of the company you were told about. Maybe I could try to push the company in the direction of the version I was sold on when I was hired. 
+
+
+C. List any information missing from the scenario that you would like to have to help you make better choices.
+    1. I mentioned it earlier, but would opting out of the data collection be an option? If it is, it would make a huge difference to whether the consumer has a real choice in who has their data. 
+
+    2. Do I have significant sway in the company? Will me speaking up make a difference? Since it's a start-up, presumably there aren't a super large number of employees, but how high am I on the totem pole? If I speak out against one of the company's practices, will it be taken into consideration, or will I be fired?
+
+    3. Am I financially secure? How desperate am I to keep this job? I know that I like it, so is it worth the risk to try to do something about preventing the sale of consumer data? Is it a risk I'm willing to take given my financial situation? What do I have to lose?
+
+    4. Will I be the one implementing the data collection? If so, how dependent are they on me? Will they be able to effortlessly replace me? Or do I know critical information about the way the code is implemented that will take some time for someone else to learn? Basically, if I left, could they survive? And would they be able to implement my idea without me?
+
+    5. How much is this data worth? Both literally to the people potentially buying it, but also to the consumers who provided this location data (perhaps unknowingly if they don't read the fine print). Maybe consumers who decide to opt in get a reduced price for the app? That data is clearly worth something, so perhaps consumers should get a cut. 
+
+    6. What are the privacy laws in the country or state that Beerz is based out of? Laws vary from place to place, so knowing exactly what legal rights the consumers have is very important. Depending on the laws, various stakeholders may have different rights. 
+
+    7. Did I sign an NDA? What exactly can I not talk about? Depending on what the answer is, potentially I could talk to the press to expose the company.
+
+
+D. Describe your possible actions, and discuss the likely consequences of those actions.
+    1. I quit and do nothing. Presumably, the guilt of being a part of a company that sells data is too much, but I don't want to risk speaking up or doing something for fear of persecution by the company. Do I have the financial security to quit? Will someone else take my place and make it happen anyway? Will quitting have any impact beyond making me feel less guilty about being a part of the company? Depending on the answers to these questions, various consequences could occur. In my mind, I think the most likely consequence is that me leaving doesn't impact the company at all, and now I need to find a new job. 
+
+    2. I quit and expose the company. Presumably, I would talk to a reporter to attempt to get public pressure on the company such that they stop all plans of selling data because the press was so bad. The desired outcome then would be that Beerz receives enough backlash that they stop, but it is possible that the company is too small and too niche for a news outlet to pick up the story. Maybe I could talk to a specialized beer magazine that might care more? Also, I would likely get fired, and am I even allowed to speak to the press if I signed an NDA? However, another outcome is that the backlash does not have an effect, or they superficially change things, but continue invading consumer's privacy and selling their data. 
+
+    3. I just do what the CEO wants. I implement my team's proposed ideas without the data-scrubbing as the CEO requested. I feel guilty for being a part of a company that is participating in surveillance capitalism. The consumers are potentially harmed, but the company likely will make more money by selling the data. 
+
+    4. I try to convince the CEO to keep consumers' data for only as long as necessary and not to sell the data. This may or may not work, especially depending on how much sway I have with the company. I may be fired. I could use a variety of arguments, including ethical considerations like I have discussed in this text, but also perhaps the company could advertise their emphasis on privacy which could look good in comparison to other apps like them. 
+
+
+E. Discuss whether the ACM Code of Ethics and Professional Conduct offers any relevant guidance.
+    Section 1.1 Contribute to society and to human well-being, acknowledging that all people are stakeholders in computing.
+        "An essential aim of computing professionals is to minimize negative consequences of computing, including threats to health, safety, personal security, and privacy. When the interests of multiple groups conflict, the needs of those less advantaged should be given increased attention and priority."
+
+        I think this section is very interesting and relevant because I am positive that not all companies abide by these ethical principles. Looking at this quote, it says that we need to minimize negative consequences. One side is pretty cut and dry, infringing on consumers' privacy by holding onto their data and selling it, is a negative consequence, so we should not do it. However, there could be an argument made that as long as the data is anonymous and cannot be traced back to the consumer, are you really infringing on their privacy? I would say yes because we can never be 100% sure that it could never be traced back, and we don't know what the buyer of the data intends to do with it. The data could be used for harm, so in that case, are we causing the harm because we let the data get collected and sold? We don't even want to go down that rabbit hole. The thing we can do with the clearest conscience is just not collect and keep the data in the first place. 
+
+    Section 1.6 Respect Privacy 
+        "Computing professionals should only use personal information for legitimate ends and without violating the rights of individuals and groups. This requires taking precautions to prevent re-identification of anonymized data or unauthorized data collection, ensuring the accuracy of data, understanding the provenance of the data, and protecting it from unauthorized access and accidental disclosure. Computing professionals should establish transparent policies and procedures that allow individuals to understand what data is being collected and how it is being used, to give informed consent for automatic data collection, and to review, obtain, correct inaccuracies in, and delete their personal data."
+
+        This quote honestly seems pretty clear with regards to this situation. 1) We make sure anonymous data stays anonymous. 2) Be super transparent about what we do with the data and give users complete control over their data. Seems like very good practice to me.
+
+    Section 3.1 Ensure that the public good is the central concern during all professional computing work.
+        "People—including users, customers, colleagues, and others affected directly or indirectly—should always be the central concern in computing."
+
+        If Beerz sells user data, is it for the public good? Since the central focus of the app is still connecting users to breweries near them, which is good for the public, is it okay that the company makes additional money on the side by selling anonymized location data? The answer is not clear, but thinking about the public good is relevant. 
+
+
+F. Describe and justify your recommended action, as well as your answers to any other questions you presented in part A.
+    I think that it makes the most sense to stay at the company and try to convince enough people that it isn't ethically right to continue down the path of holding onto user location data and selling it as anonymized bundles. In fact, I could show them portions of this document to convince them of the harm they are doing to the consumers. I especially think that the ACM Code of Ethics quotes are very explicit in this situation about what should not be done. However, if the CEO is still determined to make some money this way, I propose a few safeguards to protect the consumers. 
+
+        1. As mentioned in Section 1.6 of the ACM Code of Ethics, if we do collect and keep data, be super transparent about it. We do not want to hide it away in the fine print of a pages and pages long document. It should be a clear question when you download the app. 
+
+        2. Also at any point, the user can go to their settings to turn off the indefinite holding of location data and delete any current data in Beerz servers. As mentioned in the original proposal, there are ways to implement the new features with string data-scrubbing, so if the user opts out, they don't miss out on any of the features.
+
+        3. I mentioned this earlier, but I also had an idea about giving the consumers a cut of the data money. We could either give users a reduced price if they opt into data collection or just give everyone a reduced price because there is more income being made from the app. For the first idea, I'm not sure that would really be a fair choice. Either protect your privacy or get money? For some, it would be an easy choice. 
+
+    With regards to the questions from part A, here are some answers:
+        1. Do I do nothing and let the company sell the data (potentially)? Clearly I would be complicit in the selling of the data, but can I be held responsible even though it wasn't my idea? 
+            I don't think that the answer is to do nothing, in order to keep my conscience clear and make the right ethical decision, but I also don't know whether I should be held responsible. I might not have had a real choice in the matter. 
+
+        2. Do I have an ethical responsibility to protect the consumers privacy, even though it wasn't my decision or my original proposal?
+            I do have an ethical responsibility to protect the consumers' privacy, as a computing professional, but once again, depending on how the company is organized, there might not have been anything I could do (aka I was unable to convince anyone to stop collecting and selling the data). 
+
+        3. If all the data is anonymized, what is the harm being done? I think the issue lies mostly in being able to track that information back to you, but there could be unforeseen harm in the anonymous data too.
+            I had already kind of answered this question, and I stick by my answer.
+
+        4. Is losing my job worth trying to protect the consumer's privacy? I think for oneself, it is important to consider risk versus reward.
+            Firstly, there are things one can do without quitting. Secondly, I think it is a risk I'd be willing to take because if all I am doing is trying to convince people not to sell the data (and the CTO is already on my side), I think the risk of being fired would be low but not zero so still a risk.
+
