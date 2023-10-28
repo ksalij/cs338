@@ -1,0 +1,52 @@
+Kiri Salij
+26 October 2023
+I talked with Lysander Miller and Kyra Helmold about approaches. 
+
+Part 1
+Total time: 0m0.696s
+Number of hashes computed: 267516
+Passwords cracked: 2734
+Time per hash computed: 0.00000260 sec/hash
+Time per password cracked: 0.000255 sec/password
+Passwords cracked per number of hashes computed: 0.0102 password/hash
+
+Part 2
+Total time: 472m2.260s
+Number of hashes computed: 21754851846
+Passwords cracked: 841
+Time per hash computed: 0.00000130 sec/hash
+Time per password cracked: 33.7 sec/password
+Passwords cracked per number of hashes computed: 0.0000000387 password/hash
+
+Part 3
+Total time: 8m40.030s
+Number of hashes computed: 366666151 
+Passwords cracked: 2734
+Time per hash computed: 0.00000142 sec/hash
+Time per password cracked: 0.1902 sec/password
+Passwords cracked per number of hashes computed: 0.00000746 password/hash
+
+Analysis:
+- Did your time per hash computed change between phases? By what factor? Why?
+    Not significantly, because the more hashes computed corresponds to the program taking longer because it is likely that computing the hash is the most computationally expensive part of the process. 
+
+- Did your time per password crack change between phases? By what factor? Why?
+    Yes. From part 1 to part 3 the time increased by a factor of roughly 1000, which makes sense because roughly 1000 more hashes were computed. And from part 3 to part 2, the increase of both is a factor of 100. For each part, there are just more password possibilities to check but the same number of users/real passwords, so we need to spend more time cracking/computing hashes per password. 
+
+- Suppose you wanted to precompute all the hashes for each possible password so you could just look up the password in a table indexed by the hash. How much memory would be required for each phase?
+    Part 1:
+        There are 267516 possible passwords because there are that many words in words.txt. So if we are storing all of those passwords in a dictionary, we have 16*267516 bytes for the passwords themselves, 32*267516 bytes for the hashs of those, and an additional 32*267516 bytes for the overhead. Doing some math, we get a total of 21,401,280 bytes, which is around 21.40 MB. 
+
+    Part 2:
+        There are 267516*267516 possible passwords because each combination two words could be a password. So we take the answer from part 1 and multiply it by 267516 because we have that much more memory. We get a total of 5,725,184,820,480 bytes, which is around 5.73 TB. 
+
+    Part 3:
+        Each user will have 267516 possible unique passwords using their hash, so the total number of passwords is 2734*267516 because there are 2734 users. We can multiply part 1 by 2734, to get a total of 58,511,099,520 bytes, which is around 58.51 GB. 
+
+- Give 3-4 reasons we should store password hashes and not the passwords themselves.
+Think in terms of threats, who the attackers might be, etc.
+    1. If you just store the passwords themselves, anyone who gets access to where they are stored could login as any user and look at their data. ANYONE!
+    2. Since hashes are not reversible, the people maintaining the password data can not see the passwords, (ideally) only the user whose password it is can create the hash because they know the original password. 
+    3. I'm not sure where the hash computation happens, but in the situation where someone is trying to login to a website, they could compute the hash on their computer and send the hash over the network instead of the plain text password. Even if the password is encrypted, encryption can be broken or keys compromised, but hashes cannot be reversed.
+
+
