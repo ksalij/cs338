@@ -1,0 +1,47 @@
+Kiri Salij
+6 September 2023
+I brainstormed ideas with Lysander Miller.
+
+PART 1: COOKIES
+    a. Go to FDF and use your browser's Inspector to take a look at your cookies for cs338.jeffondich.com. Are there cookies for that domain? What are their names and values?
+        Yes,  there is one cookie called “theme”. The value for the theme cookie is default. 
+
+    b. Using the "Theme" menu on the FDF page, change your theme to red or blue. Look at your cookies for cs338.jeffondich.com again. Did they change?
+        Yes! The theme cookie value is now blue.
+
+    c. Do the previous two steps (examining cookies and changing the theme) using Burpsuite (either on your base OS or on Kali). What "Cookie:" and "Set-Cookie:" HTTP headers do you see? Do you see the same cookie values as you did with the Inspector?
+        I see, Cookie: theme=default, which is the same cookie value I saw in the Inspector. Then once I change my theme, I see Cookie: theme=blue. 
+
+    d. Quit your browser, relaunch it, and go back to the FDF. Is your red or blue theme (wherever you last left it) still selected?
+        Yes it is!
+
+    e. How is the current theme transmitted between the browser and the FDF server?
+        When the browser sends an HTTP request to the server, it includes Cookie: theme=blue, (or whatever theme is chosen) in the request for the webpage. 
+
+    f. When you change the theme, how is the change transmitted between the browser and the FDF server?
+        First the browser asks for http://cs338.jeffondich.com/fdf/?theme=red, which then executes some javascript that sets Cookie: theme=red, which will mean that the next time the browser visits the site the theme will be red, even if we don’t go to ?theme=red because the browser will send the cookie to the server letting it know that theme=red. 
+
+    g. How could you use your browser's Inspector to change the FDF theme without using the FDF's Theme menu?
+        You can just edit the theme cookie within Inspector so that the value is something else. Then next time the browser asks for the webpage, it will send the cookie value we inputted in the HTTP request. 
+
+    h. How could you use Burpsuite's Proxy tool to change the FDF theme without using the FDF's Theme menu?
+        Burpsuite intercepts the requests that the browser sends out, so we can edit the request before it is sent to the server. In the HTTP request, we just edit the cookie value to what we want it to be, and then forward it to the server. 
+
+    i. Where does your OS (the OS where you're running your browser and Burpsuite, that is) store cookies? (This will require some internet searching, most likely.)
+        On Kali Linux, I found them in /home/kali/.BurpSuite/pre-wired-browser/Default/Cookies. 
+        On Windows, Microsoft Edge, the browser I usually use, stores its cookies in C:\Users\USER\AppData\Local\Microsoft\Edge\User Data\Default\Network\Cookies-journal, where USER is in place of the username.
+
+PART 2: CROSS-SITE SCRIPTING (XSS)
+    1. Provide a diagram and/or a step-by-step description of the nature and timing of Moriarty's attack on users of the FDF.
+        a. Moriarty writes some Javascript in a post. 
+        b. A user clicks on the post.
+        c. The Javascript executes on the user’s computer, and thus has access to everything the user has access to. The malicious code does something bad to the user. (the text turns red, abox pops up, etc)
+
+    2. Describe an XSS attack that is more virulent than Moriarty's "turn something red" and "pop up a message" attacks. Think about what kinds of things the Javascript might have access to via Alice's browser when Alice views the attacker's post.
+        You could send the user to a site on a server you control that looks a lot like a login page for something like Carleton, Google, Facebook, etc., and then still their login information when input their credentials into your malicious site. 
+
+    3. Do it again: describe a second attack that is more virulent than Moriarty's, but that's substantially different from your first idea.
+        You could get the user’s IP address, and then send it to yourself using the fetch() method. Using their IP address you could send them things which are malicious. 
+
+    4. What techniques can the server or the browser use to prevent what Moriarty is doing?
+        The server should sanitize the user inputs such that they cannot execute Javascript code.
